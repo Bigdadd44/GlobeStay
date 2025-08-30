@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobeTrek Travel & Tours</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌍 Globe<span>Stay</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <button class="mode-toggle" onclick="toggleMode()">🌙</button>
+    </nav>
+  </header>
+
+    <header class="hero">
+  <div class="hero-content">
+    <h1 class="animate-text">Your Adventure Begins Here 🌍</h1>
+    <p class="animate-sub">Discover new places, explore cultures, and make unforgettable memories.</p>
+    <button class="btn-glass" onclick="exploreNow()">✨ Explore Now</button>
+  </div>
+  <div class="scroll-down">↓</div>
+</header>
+
+ <!-- About -->
+ <section class="about-section">
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p>
+      We are passionate about creating unforgettable travel experiences. 
+      From safaris to city tours, our mission is to bring you closer to 
+      the wonders of the world.
+    </p>
+  </div>
+  <img src="images/mapabout.jpg" alt="World Map">
+</section>
+
+
+  <!-- Packages -->
+  <section id="packages" class="packages">
+    <h2>Our Travel Packages</h2>
+    <div class="package-cards">
+      <div class="card">
+        <img src="images/paris1.jpg" alt="Paris">
+        <h3>Romantic Paris</h3>
+        <p>5 Days in Paris, France. Includes flights, hotel & tours.</p>
+        <span>$1200</span>
+      </div>
+      <div class="card">
+        <img src="images/safari.jpg" alt="Safari">
+        <h3>African Safari</h3>
+        <p>7 Days wildlife safari in Kenya & Tanzania.</p>
+        <span>$1800</span>
+      </div>
+      <div class="card">
+        <img src="images/maldives.jpg" alt="Maldives">
+        <h3>Maldives Getaway</h3>
+        <p>Luxury 6 Days beach holiday in Maldives.</p>
+        <span>$2200</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 GlobeStay Travel & Tours | Designed with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
